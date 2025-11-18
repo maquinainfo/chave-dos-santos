@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Chave dos Santos - O Guia Definitivo</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Fontes Litúrgicas e Romanas -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;900&family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        vatican: {
+                            800: '#581c1c', // Vermelho Borgonha/Cardeal
+                            900: '#3a0e0e', // Sangue escuro
+                        },
+                        gold: {
+                            300: '#fcd34d',
+                            400: '#fbbf24',
+                            500: '#d97706', // Ouro envelhecido
+                            600: '#b45309', // Bronze
+                        },
+                        parchment: {
+                            50: '#fbfaf8',
+                            100: '#f4f1ea', // Cor de papel antigo
+                            200: '#e6dfd1',
+                        },
+                    },
+                    fontFamily: {
+                        display: ['Cinzel', 'serif'], // Títulos estilo Romano
+                        body: ['EB Garamond', 'serif'], // Corpo estilo Bíblico
+                    },
+                    backgroundImage: {
+                        'damask': "url('data:image/svg+xml,%3Csvg width=\\'60\\' height=\\'60\\' viewBox=\\'0 0 60 60\\' xmlns=\\'http://www.w3.org/2000/svg\\'%3E%3Cg fill=\\'none\\' fill-rule=\\'evenodd\\'%3E%3Cg fill=\\'%239C92AC\\' fill-opacity=\\'0.05\\'%3E%3Cpath d=\\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')",
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            scroll-behavior: smooth;
+            font-family: 'EB Garamond', serif;
+            background-color: #f4f1ea;
+        }
+        
+        h1, h2, h3, h4, .roman-font {
+            font-family: 'Cinzel', serif;
+        }
+
+        /* Textura de Mármore/Papel */
+        .bg-texture {
+            background-color: #f4f1ea;
+            background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 18c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm48 25c3.866 0 7-3.134 7-7s-3.134-7-7-7-7 3.134-7 7 3.134 7 7 7zm-43-7c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm63 31c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM34 90c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zm56-76c1.657 0 3-1.343 3-3s-1.343-3-3-3-3 1.343-3 3 1.343 3 3 3zM12 86c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm28-65c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm23-11c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-6 60c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm29 22c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zM32 63c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm57-13c2.76 0 5-2.24 5-5s-2.24-5-5-5-5 2.24-5 5 2.24 5 5 5zm-9-21c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM60 91c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM35 41c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2zM12 60c1.105 0 2-.895 2-2s-.895-2-2-2-2 .895-2 2 .895 2 2 2z' fill='%23d97706' fill-opacity='0.03' fill-rule='evenodd'/%3E%3C/svg%3E");
+        }
+
+        /* Borda Ornamentada "Sacra" */
+        .sacred-border {
+            border: 4px double #d97706;
+            position: relative;
+        }
+        .sacred-border::after {
+            content: '';
+            position: absolute;
+            top: 4px; left: 4px; right: 4px; bottom: 4px;
+            border: 1px solid rgba(217, 119, 6, 0.3);
+            pointer-events: none;
+        }
+
+        .btn-sacred {
+            background: linear-gradient(180deg, #b45309 0%, #78350f 100%);
+            border: 1px solid #fcd34d;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+        }
+        .btn-sacred:hover {
+            background: linear-gradient(180deg, #d97706 0%, #92400e 100%);
+            transform: translateY(-1px);
+        }
+        
+        /* Drop Cap (Capitular) */
+        .drop-cap::first-letter {
+            float: left;
+            font-family: 'Cinzel', serif;
+            font-size: 3.5rem;
+            line-height: 0.8;
+            font-weight: 700;
+            padding-top: 4px;
+            padding-right: 8px;
+            color: #b45309;
+        }
+    </style>
+</head>
+<body class="bg-parchment-100 text-gray-900 antialiased">
+
+    <!-- Announcement Bar -->
+    <div class="bg-vatican-900 text-gold-400 text-center py-3 text-sm font-serif uppercase tracking-widest border-b-2 border-gold-600">
+        <span class="mx-2">✠</span> CHAVE DOS SANTOS <span class="mx-2">✠</span>
+    </div>
+
+    <!-- Hero Section -->
+    <header class="relative bg-vatican-800 text-white pt-16 pb-24 px-4 overflow-hidden border-b-8 border-double border-gold-600">
+        <!-- Overlay pattern -->
+        <div class="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/black-scales.png')]"></div>
+        <div class="absolute inset-0 bg-gradient-to-b from-black/60 via-vatican-900/80 to-vatican-800/90"></div>
+
+        <div class="max-w-4xl mx-auto text-center relative z-10">
+            
+            <div class="flex justify-center mb-6 text-gold-500 opacity-80">
+                <i class="fas fa-cross fa-2x"></i>
+            </div>
+
+            <div class="inline-block border-y border-gold-500/50 px-6 py-2 mb-8 text-gold-300 font-display text-sm tracking-[0.2em] uppercase">
+                Descubra em 30 segundos
+            </div>
+            
+            <h2 class="text-xl md:text-2xl font-body italic text-parchment-200 mb-6 font-light tracking-wide">
+                Descubra em 30 segundos qual santo pode interceder pelo seu problema — e receba a oração certa para começar HOJE.
+            </h2>
+
+            <h1 class="font-display text-5xl md:text-7xl font-bold leading-tight mb-6 text-white drop-shadow-2xl tracking-tight">
+                <span class="block text-gold-400 text-3xl md:text-4xl mb-2 font-normal">✠ A ✠</span>
+                CHAVE DOS SANTOS
+            </h1>
+            
+            <p class="text-xl md:text-2xl font-body text-parchment-100 mb-12 max-w-2xl mx-auto leading-relaxed border-t border-b border-white/10 py-4">
+                O Guia Definitivo Para Escolher o Santo Certo Para Cada Batalha da Sua Vida
+            </p>
+
+            <a href="#oferta" class="btn-sacred inline-flex items-center justify-center px-10 py-5 text-xl font-display font-bold text-white rounded-sm transition-all duration-300 uppercase tracking-widest">
+                <span class="mr-3">Quero Desbloquear</span>
+                <i class="fas fa-key text-gold-300"></i>
+            </a>
+            
+            <p class="mt-6 text-sm text-gold-500/60 font-display tracking-widest">Pax et Bonum</p>
+        </div>
+    </header>
+
+    <!-- The Problem / Agitation -->
+    <section class="py-20 px-4 bg-texture relative">
+        <div class="max-w-3xl mx-auto">
+            <div class="text-center mb-10">
+                <i class="fas fa-praying-hands text-4xl text-vatican-800 opacity-80 mb-4"></i>
+                <h2 class="font-display text-3xl md:text-4xl font-bold text-vatican-900 leading-tight">
+                    Você está passando por um problema e… não sabe para qual santo rezar?
+                </h2>
+                <div class="h-1 w-24 bg-gold-500 mx-auto mt-6"></div>
+            </div>
+
+            <div class="prose prose-xl mx-auto text-gray-800 font-body leading-relaxed">
+                <p class="drop-cap mb-6">Essa é uma das dores espirituais mais profundas dos católicos:</p>
+                
+                <div class="bg-white border-l-4 border-vatican-800 p-6 shadow-md my-8 italic text-xl text-vatican-900 relative">
+                    <span class="absolute top-2 left-2 text-4xl text-gray-200 font-display">“</span>
+                    Você tem um medo, uma urgência, uma injustiça, um problema familiar, financeiro ou emocional…
+                    Você sabe que existe um santo para aquela causa, <strong>mas não sabe qual é.</strong>
+                </div>
+
+                <p>E nesse momento, a dúvida pesa. A oração trava. A fé enfraquece. A mente se confunde. O coração aperta.</p>
+
+                <div class="text-center my-12 p-8 sacred-border bg-white/80">
+                    <p class="font-display font-bold text-vatican-900 text-xl mb-2">E tudo o que você pensa é:</p>
+                    <p class="font-body italic text-3xl text-vatican-800">“Meu Deus… para qual santo eu peço ajuda agora?”</p>
+                </div>
+
+                <div class="bg-vatican-900 text-parchment-100 p-10 rounded-sm shadow-2xl border-2 border-gold-600 relative overflow-hidden">
+                    <div class="absolute top-0 left-0 w-16 h-16 border-t-2 border-l-2 border-gold-500 rounded-tl-lg m-2"></div>
+                    <div class="absolute bottom-0 right-0 w-16 h-16 border-b-2 border-r-2 border-gold-500 rounded-br-lg m-2"></div>
+
+                    <p class="font-display font-bold text-gold-400 text-xl mb-6 uppercase tracking-wider text-center border-b border-gold-500/30 pb-4">
+                        Este é o guia mais importante da sua vida espiritual
+                    </p>
+                    <p class="mb-6">Porque pela primeira vez, alguém organizou de forma clara, simples e prática:</p>
+                    <ul class="space-y-4 text-lg">
+                        <li class="flex items-start"><span class="text-gold-500 mr-3">👉</span> <span>Qual santo te ajuda em cada tipo de problema</span></li>
+                        <li class="flex items-start"><span class="text-gold-500 mr-3">👉</span> <span>Qual oração usar para cada situação</span></li>
+                        <li class="flex items-start"><span class="text-gold-500 mr-3">👉</span> <span>Como ativar a intercessão correta</span></li>
+                        <li class="flex items-start"><span class="text-gold-500 mr-3">👉</span> <span>Quando rezar, como rezar e o que pedir</span></li>
+                    </ul>
+                    <p class="mt-8 font-display text-center text-gold-300 text-xl uppercase tracking-widest border-t border-gold-500/30 pt-4">
+                        Simples. Direto. Iluminador.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Solution -->
+    <section class="py-24 px-4 bg-white border-y-8 border-double border-vatican-800 relative">
+        <div class="absolute inset-0 bg-texture opacity-50"></div>
+        
+        <div class="max-w-5xl mx-auto text-center relative z-10">
+            <div class="inline-block mb-4 text-vatican-800 text-5xl opacity-80">
+                <i class="fas fa-church"></i>
+            </div>
+            <h2 class="font-display text-2xl text-gray-500 tracking-[0.3em] uppercase mb-2">Apresentando</h2>
+            <h3 class="font-display text-6xl font-bold text-vatican-900 mb-6 tracking-tighter">
+                CHAVE DOS SANTOS
+            </h3>
+            <div class="flex justify-center items-center mb-8">
+                <div class="h-px bg-gold-500 w-24"></div>
+                <div class="mx-4 text-gold-600 text-2xl">✦</div>
+                <div class="h-px bg-gold-500 w-24"></div>
+            </div>
+            
+            <p class="text-2xl font-body text-gray-700 max-w-3xl mx-auto mb-16 italic">
+                Descubra em 30 segundos qual santo pode interceder pela sua situação e receba a oração certa para iniciar hoje mesmo.
+            </p>
+
+            <!-- Features Grid -->
+            <div class="bg-parchment-50 shadow-xl p-8 md:p-12 text-left sacred-border mx-auto max-w-4xl">
+                <h4 class="text-2xl font-display font-bold text-vatican-900 mb-10 text-center uppercase border-b border-gold-200 pb-4">
+                    🎯 O que você vai desbloquear com este guia
+                </h4>
+                <p class="text-center mb-8 italic text-gray-600">Você encontrará um mapa completo mostrando:</p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-y-6 gap-x-10 font-body text-lg text-gray-800">
+                    <div class="flex items-start"><i class="fas fa-check text-gold-600 mt-1 mr-3 text-xs"></i><span>Qual santo pedir para <strong>problemas urgentes</strong></span></div>
+                    <div class="flex items-start"><i class="fas fa-check text-gold-600 mt-1 mr-3 text-xs"></i><span>Qual santo pedir para <strong>causas impossíveis</strong></span></div>
+                    <div class="flex items-start"><i class="fas fa-check text-gold-600 mt-1 mr-3 text-xs"></i><span>Qual santo pedir para <strong>proteção espiritual</strong></span></div>
+                    <div class="flex items-start"><i class="fas fa-check text-gold-600 mt-1 mr-3 text-xs"></i><span>Qual santo pedir para <strong>conflitos na família</strong></span></div>
+                    <div class="flex items-start"><i class="fas fa-check text-gold-600 mt-1 mr-3 text-xs"></i><span>Qual santo pedir para <strong>injustiças</strong></span></div>
+                    <div class="flex items-start"><i class="fas fa-check text-gold-600 mt-1 mr-3 text-xs"></i><span>Qual santo pedir para <strong>decisões difíceis</strong></span></div>
+                    <div class="flex items-start"><i class="fas fa-check text-gold-600 mt-1 mr-3 text-xs"></i><span>Qual santo pedir para <strong>medos e perturbações</strong></span></div>
+                    <div class="flex items-start"><i class="fas fa-check text-gold-600 mt-1 mr-3 text-xs"></i><span>Qual santo pedir para <strong>abrir caminhos</strong></span></div>
+                    <div class="flex items-start md:col-span-2 bg-vatican-900/5 p-4 rounded border border-vatican-900/10">
+                        <i class="fas fa-check text-vatican-800 mt-1 mr-3"></i>
+                        <span class="font-semibold text-vatican-900">Qual santo pedir quando não sabe mais o que fazer</span>
+                    </div>
+                </div>
+
+                <div class="mt-10 text-center">
+                    <p class="text-xl font-body italic text-gray-600">
+                        Em cada caso: você descobre o santo → entende a especialidade → recebe a oração correta.
+                        <span class="block mt-4 font-display text-gold-600 font-bold text-sm tracking-widest uppercase">Tudo em segundos.</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Method -->
+    <section class="py-20 px-4 bg-vatican-900 text-parchment-100 border-b-4 border-gold-600">
+        <div class="max-w-5xl mx-auto text-center">
+            <h2 class="font-display text-3xl md:text-4xl font-bold mb-12 text-gold-400 tracking-wide">
+                ⚔️ Método Único: “Intercessão Precisa”
+            </h2>
+            
+            <div class="max-w-3xl mx-auto mb-12 prose prose-invert">
+                <p class="text-xl">Não é um livro. Não é uma coletânea aleatória de orações.</p>
+                <p class="text-2xl font-bold text-gold-300">É um sistema:</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="relative p-6 border border-gold-600/30 bg-vatican-800">
+                    <div class="absolute -top-5 left-1/2 transform -translate-x-1/2 bg-vatican-900 px-4 text-gold-500 font-display text-3xl font-bold border border-gold-600/50 rounded-full h-12 w-12 flex items-center justify-center">1</div>
+                    <p class="font-body text-lg mt-4">Você identifica seu problema</p>
+                </div>
+                <div class="relative p-6 border border-gold-600/30 bg-vatican-800">
+                    <div class="absolute -top-5 left-1/2 transform -translate-x-1/2 bg-vatican-900 px-4 text-gold-500 font-display text-3xl font-bold border border-gold-600/50 rounded-full h-12 w-12 flex items-center justify-center">2</div>
+                    <p class="font-body text-lg mt-4">O guia aponta o santo correspondente</p>
+                </div>
+                <div class="relative p-6 border border-gold-600/30 bg-vatican-800">
+                    <div class="absolute -top-5 left-1/2 transform -translate-x-1/2 bg-vatican-900 px-4 text-gold-500 font-display text-3xl font-bold border border-gold-600/50 rounded-full h-12 w-12 flex items-center justify-center">3</div>
+                    <p class="font-body text-lg mt-4">Você recebe oração + orientação direta</p>
+                </div>
+                <div class="relative p-6 border border-gold-600/30 bg-vatican-800">
+                    <div class="absolute -top-5 left-1/2 transform -translate-x-1/2 bg-vatican-900 px-4 text-gold-500 font-display text-3xl font-bold border border-gold-600/50 rounded-full h-12 w-12 flex items-center justify-center">4</div>
+                    <p class="font-body text-lg mt-4">Aplica na hora</p>
+                </div>
+            </div>
+
+            <p class="mt-12 font-display uppercase tracking-[0.2em] text-gold-300 text-sm opacity-80">Simples. Poderoso. Transformador.</p>
+        </div>
+    </section>
+
+    <!-- Content Modules (Chapters) -->
+    <section class="py-20 px-4 bg-texture">
+        <div class="max-w-5xl mx-auto">
+            <div class="text-center mb-12">
+                 <h2 class="font-display text-4xl font-bold text-vatican-900">📘 O Que Tem Dentro do Guia</h2>
+                 <div class="w-full max-w-xs mx-auto border-t border-b border-gold-400 h-1 my-4"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white p-8 border-l-4 border-vatican-800 shadow-sm hover:shadow-md transition-shadow">
+                    <h3 class="font-display font-bold text-vatican-900 text-xl mb-2 flex items-center"><span class="text-gold-600 text-sm mr-3">🔹</span> CAPÍTULO 1 — Problemas pessoais</h3>
+                    <p class="text-gray-600 font-body text-lg italic">Medo, insegurança, tristeza, falta de direção.</p>
+                </div>
+                <div class="bg-white p-8 border-l-4 border-vatican-800 shadow-sm hover:shadow-md transition-shadow">
+                    <h3 class="font-display font-bold text-vatican-900 text-xl mb-2 flex items-center"><span class="text-gold-600 text-sm mr-3">🔹</span> CAPÍTULO 2 — Batalhas espirituais</h3>
+                    <p class="text-gray-600 font-body text-lg italic">Proteção, opressão, pesadelos, sensação de peso espiritual.</p>
+                </div>
+                <div class="bg-white p-8 border-l-4 border-vatican-800 shadow-sm hover:shadow-md transition-shadow">
+                    <h3 class="font-display font-bold text-vatican-900 text-xl mb-2 flex items-center"><span class="text-gold-600 text-sm mr-3">🔹</span> CAPÍTULO 3 — Vida familiar</h3>
+                    <p class="text-gray-600 font-body text-lg italic">Desentendimentos, falta de harmonia, conflitos e tensões.</p>
+                </div>
+                <div class="bg-white p-8 border-l-4 border-vatican-800 shadow-sm hover:shadow-md transition-shadow">
+                    <h3 class="font-display font-bold text-vatican-900 text-xl mb-2 flex items-center"><span class="text-gold-600 text-sm mr-3">🔹</span> CAPÍTULO 4 — Trabalho e finanças</h3>
+                    <p class="text-gray-600 font-body text-lg italic">Portas fechadas, desemprego, injustiças, crises.</p>
+                </div>
+                <div class="bg-vatican-50 p-8 border-l-4 border-red-700 shadow-sm hover:shadow-md transition-shadow">
+                    <h3 class="font-display font-bold text-red-900 text-xl mb-2 flex items-center"><span class="text-red-600 text-sm mr-3">🔹</span> CAPÍTULO 5 — Causas extremamente urgentes</h3>
+                    <p class="text-red-800 font-body text-lg italic">Quando você precisa de intercessão imediata.</p>
+                </div>
+                <div class="bg-white p-8 border-l-4 border-vatican-800 shadow-sm hover:shadow-md transition-shadow">
+                    <h3 class="font-display font-bold text-vatican-900 text-xl mb-2 flex items-center"><span class="text-gold-600 text-sm mr-3">🔹</span> CAPÍTULO 6 — Decisões difíceis</h3>
+                    <p class="text-gray-600 font-body text-lg italic">Quando você está entre dois caminhos e não sabe ouvir Deus.</p>
+                </div>
+                <div class="bg-white p-8 border-l-4 border-vatican-800 shadow-sm hover:shadow-md transition-shadow">
+                    <h3 class="font-display font-bold text-vatican-900 text-xl mb-2 flex items-center"><span class="text-gold-600 text-sm mr-3">🔹</span> CAPÍTULO 7 — O poder das medalhas</h3>
+                    <p class="text-gray-600 font-body text-lg italic">Qual santo corresponde a cada medalha — e como usar corretamente.</p>
+                </div>
+                <div class="bg-white p-8 border-l-4 border-vatican-800 shadow-sm hover:shadow-md transition-shadow">
+                    <h3 class="font-display font-bold text-vatican-900 text-xl mb-2 flex items-center"><span class="text-gold-600 text-sm mr-3">🔹</span> CAPÍTULO 8 — O santo certo para cada emoção</h3>
+                    <p class="text-gray-600 font-body text-lg italic">Angústia, falta de coragem, desânimo, medo.</p>
+                </div>
+            </div>
+            <p class="text-center mt-8 font-display italic text-gray-600">Tudo organizado, simples e direto.</p>
+        </div>
+    </section>
+
+    <!-- Bonuses -->
+    <section class="py-20 px-4 bg-vatican-800 text-parchment-100 relative overflow-hidden">
+         <div class="absolute inset-0 opacity-5 pattern-grid-lg"></div>
+         
+        <div class="max-w-4xl mx-auto relative z-10">
+            <div class="text-center mb-12">
+                <i class="fas fa-crown text-gold-500 text-3xl mb-4"></i>
+                <h2 class="font-display text-3xl font-bold text-white tracking-widest uppercase">
+                    🏆 Bônus Exclusivos
+                </h2>
+                <p class="text-gold-400 font-body italic mt-2">(por tempo limitado)</p>
+            </div>
+
+            <div class="space-y-4">
+                <!-- Bonus Item 1 (UPDATED) -->
+                <div class="bg-vatican-900/50 border border-gold-600/30 p-6 flex items-center group hover:bg-vatican-900 transition-colors rounded-sm">
+                    <div class="text-4xl text-gold-500 mr-6 font-display font-bold opacity-50 group-hover:opacity-100">💎</div>
+                    <div>
+                        <h3 class="font-display font-bold text-lg text-gold-200">Bônus 1 — Manual da Bênção do Lar</h3>
+                        <p class="text-gray-400 font-body italic">Orações antigas e sacramentais para blindar sua casa contra todo mal e trazer a paz de Deus para sua família.</p>
+                    </div>
+                </div>
+                <!-- Bonus Item 2 -->
+                <div class="bg-vatican-900/50 border border-gold-600/30 p-6 flex items-center group hover:bg-vatican-900 transition-colors rounded-sm">
+                    <div class="text-4xl text-gold-500 mr-6 font-display font-bold opacity-50 group-hover:opacity-100">💎</div>
+                    <div>
+                        <h3 class="font-display font-bold text-lg text-gold-200">Bônus 2 — As 12 Combinações de Intercessão Mais Poderosas</h3>
+                        <p class="text-gray-400 font-body italic">Tríades espirituais para situações muito pesadas.</p>
+                    </div>
+                </div>
+                <!-- Bonus Item 3 -->
+                <div class="bg-vatican-900/50 border border-gold-600/30 p-6 flex items-center group hover:bg-vatican-900 transition-colors rounded-sm">
+                    <div class="text-4xl text-gold-500 mr-6 font-display font-bold opacity-50 group-hover:opacity-100">💎</div>
+                    <div>
+                        <h3 class="font-display font-bold text-lg text-gold-200">Bônus 3 — Mini Consagração de 24h a São Miguel</h3>
+                        <p class="text-gray-400 font-body italic">Para proteção rápida e foco espiritual.</p>
+                    </div>
+                </div>
+                <!-- Bonus Item 4 -->
+                <div class="bg-vatican-900/50 border border-gold-600/30 p-6 flex items-center group hover:bg-vatican-900 transition-colors rounded-sm">
+                    <div class="text-4xl text-gold-500 mr-6 font-display font-bold opacity-50 group-hover:opacity-100">💎</div>
+                    <div>
+                        <h3 class="font-display font-bold text-lg text-gold-200">Bônus 4 — Checklist “Como Rezar com Foco”</h3>
+                        <p class="text-gray-400 font-body italic">Para quem se distrai muito na oração.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-20 px-4 bg-parchment-200">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-center font-display text-2xl text-vatican-800 mb-12 uppercase tracking-[0.2em]">
+                💬 Depoimentos
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="text-center px-4">
+                    <div class="text-gold-600 text-4xl font-display mb-4">❝</div>
+                    <p class="text-vatican-900 font-body text-xl italic mb-4 leading-relaxed">Eu sempre ficava confusa sobre qual santo pedir ajuda. Agora, em segundos, sei exatamente quem procurar. Transformador!</p>
+                    <div class="h-px w-12 bg-vatican-800/30 mx-auto"></div>
+                </div>
+                <div class="text-center px-4 border-x border-vatican-800/10">
+                    <div class="text-gold-600 text-4xl font-display mb-4">❝</div>
+                    <p class="text-vatican-900 font-body text-xl italic mb-4 leading-relaxed">Pela primeira vez, entendi qual santo intercede por qual situação. Me deu muita paz e clareza.</p>
+                    <div class="h-px w-12 bg-vatican-800/30 mx-auto"></div>
+                </div>
+                <div class="text-center px-4">
+                    <div class="text-gold-600 text-4xl font-display mb-4">❝</div>
+                    <p class="text-vatican-900 font-body text-xl italic mb-4 leading-relaxed">O guia de emergência salvou minha noite em um momento de medo. Obrigado!</p>
+                    <div class="h-px w-12 bg-vatican-800/30 mx-auto"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Offer Section -->
+    <section id="oferta" class="py-24 px-4 bg-vatican-900 relative text-white border-y-8 border-double border-gold-600">
+        <!-- Background Texture -->
+        <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/black-scales.png')] opacity-20"></div>
+
+        <div class="max-w-lg mx-auto relative z-10">
+            <div class="bg-parchment-100 text-gray-900 shadow-2xl overflow-hidden border-4 border-gold-500/50 p-1">
+                <div class="border border-vatican-900/20 p-8">
+                    
+                    <div class="text-center mb-8">
+                        <span class="bg-black text-gold-400 px-4 py-2 text-sm font-display uppercase tracking-widest font-bold border border-gold-500">MEGA OFERTA BLACK NOVEMBER</span>
+                    </div>
+                    
+                    <div class="mb-8 space-y-3 text-sm text-gray-600 font-body text-center border-b border-gray-300 pb-6">
+                        <h3 class="font-bold text-gray-400 uppercase text-xs mb-4">🎁 VALOR TOTAL DO PACOTE COMPLETO</h3>
+                        <p class="flex justify-between px-4"><span>Chave dos Santos:</span> <span class="line-through">R$ 97</span></p>
+                        <p class="flex justify-between px-4"><span>Bônus 1:</span> <span class="line-through">R$ 39</span></p>
+                        <p class="flex justify-between px-4"><span>Bônus 2:</span> <span class="line-through">R$ 49</span></p>
+                        <p class="flex justify-between px-4"><span>Bônus 3:</span> <span class="line-through">R$ 29</span></p>
+                        <p class="flex justify-between px-4"><span>Bônus 4:</span> <span class="line-through">R$ 27</span></p>
+                        <p class="text-red-700 font-bold text-lg mt-4 border-t pt-2">Valor total: <span class="line-through">R$ 241</span></p>
+                    </div>
+
+                    <div class="text-center">
+                        <p class="text-xl text-vatican-800 mb-2 font-display font-bold">🎉 HOJE: Apenas</p>
+                        <div class="text-7xl font-display font-bold text-vatican-900 mb-4 flex justify-center items-start">
+                            <span class="text-2xl mt-2 mr-2">R$</span>29
+                        </div>
+                        
+                        <button class="w-full btn-sacred text-white font-display font-bold text-xl py-5 px-4 shadow-lg mb-6 uppercase tracking-widest">
+                            Acessar Agora <i class="fas fa-caret-right ml-2"></i>
+                        </button>
+                        
+                        <p class="text-xs text-gray-500 font-body italic">
+                            <i class="fas fa-lock mr-1"></i> Acesso imediato • 100% digital • Entrega na hora
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Guarantee -->
+    <section class="py-16 px-4 bg-texture text-center">
+        <div class="max-w-2xl mx-auto border-4 double border-vatican-200 p-10">
+            <i class="fas fa-shield-alt text-5xl text-gold-600 mb-6"></i>
+            <h2 class="font-display text-2xl font-bold text-vatican-900 mb-4 uppercase">🛡️ GARANTIA “PAZ ESPIRITUAL EM 7 DIAS”</h2>
+            <p class="text-gray-700 mb-4 font-body text-lg">
+                Você tem 7 dias para ler, aplicar e sentir clareza espiritual.
+                Se não sentir orientação, direção e luz, devolvemos 100% do valor.
+            </p>
+            <p class="font-display text-vatican-800 font-bold text-sm uppercase tracking-widest">Simples. Sem perguntas.</p>
+        </div>
+    </section>
+    
+    <!-- Final CTA (UPDATED) -->
+    <section class="py-16 px-4 bg-parchment-200 text-center border-t border-gold-500/20">
+        <div class="max-w-3xl mx-auto">
+            <!-- Removed Headline Here -->
+            <a href="#oferta" class="inline-flex flex-col items-center justify-center px-12 py-6 text-xl font-display font-bold text-white transition-all duration-200 bg-vatican-800 rounded shadow-lg hover:bg-vatican-900 w-full md:w-auto border border-gold-600">
+                <span>✝️ CLIQUE NO BOTÃO ABAIXO E ACESSE A CHAVE DOS SANTOS AGORA.</span>
+                <span class="text-base font-body font-normal opacity-90 mt-2 italic">Descubra hoje qual santo está pronto para interceder por você.</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- FAQ (ADDED BACK) -->
+    <section class="py-20 px-4 bg-white">
+        <div class="max-w-3xl mx-auto">
+            <h2 class="font-display text-3xl font-bold text-vatican-900 mb-12 text-center">❓ FAQ — Perguntas Frequentes</h2>
+            
+            <div class="space-y-8">
+                <div>
+                    <h3 class="font-display font-bold text-lg text-vatican-800 mb-2">➤ O guia é católico de verdade?</h3>
+                    <p class="text-gray-700 font-body text-lg">Sim. 100% fundamentado em devoções, intercessões e orações reconhecidas pela Igreja Católica.</p>
+                </div>
+                <div class="border-t border-gray-200 pt-6">
+                    <h3 class="font-display font-bold text-lg text-vatican-800 mb-2">➤ É digital ou físico?</h3>
+                    <p class="text-gray-700 font-body text-lg">Digital. Você recebe tudo imediatamente.</p>
+                </div>
+                <div class="border-t border-gray-200 pt-6">
+                    <h3 class="font-display font-bold text-lg text-vatican-800 mb-2">➤ Posso usar mesmo sem conhecer muito sobre santos?</h3>
+                    <p class="text-gray-700 font-body text-lg">Sim. O guia foi criado especialmente para quem se sente perdido e quer clareza.</p>
+                </div>
+                <div class="border-t border-gray-200 pt-6">
+                    <h3 class="font-display font-bold text-lg text-vatican-800 mb-2">➤ Funciona para qualquer problema?</h3>
+                    <p class="text-gray-700 font-body text-lg">Sim — o guia aponta o santo certo para mais de 100 tipos de dificuldades reais.</p>
+                </div>
+                <div class="border-t border-gray-200 pt-6">
+                    <h3 class="font-display font-bold text-lg text-vatican-800 mb-2">➤ Posso imprimir?</h3>
+                    <p class="text-gray-700 font-body text-lg">Sim! O arquivo é seu.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-vatican-900 text-gold-500/40 py-12 text-center text-sm border-t border-gold-900">
+        <div class="mb-6 text-2xl opacity-30">✠</div>
+        <p class="font-display tracking-widest">&copy; 2024 Chave dos Santos. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
